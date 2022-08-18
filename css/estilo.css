@@ -7,6 +7,8 @@ body{
    min-height: 100%;
 }
 
+/* ////////////////////////// NAVBAR ////////////////////////////////////// */
+
 nav ul li{
    list-style: none; 
    font-size: 20px;
@@ -20,6 +22,8 @@ header nav a:link, header nav a:visited, header nav a:active, .contacto a:link, 
    color:rgb(9, 89, 236);
    cursor: pointer;
 }
+
+/* /////////////////////////////// FIN NAVBAR ////////////////////////////// */
 
 li{
    list-style-type: none;
@@ -40,11 +44,7 @@ main div p{
    font-size: 30px;
 }
 
-footer{
-   font-size: 20px;
-   border-top: 1px solid rgba(204, 195, 195,0.4);
-   width: 100%;
-}
+
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -107,6 +107,13 @@ main{
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* //////////////////////////// FOOTER ////////////////////////////////// */
+
+footer{
+   font-size: 20px;
+   border-top: 1px solid rgba(204, 195, 195,0.4);
+   width: 100%;
+}
 .rrss{
    display: flex;
    flex-direction: row;
@@ -126,6 +133,8 @@ main{
    border-top: 1px solid rgb(158, 154, 154);
    padding: 20px;
 }
+
+/*////////////////////////////////// FIN FOOTER  ///////////////////////////////////////*/
 
 aside p{
    font-family: Georgia, 'Times New Roman', Times, serif;
@@ -147,7 +156,7 @@ aside h3{
 }
 
 
-/* GRID MAIN */
+/* ///////////////////////// GRID MAIN  ////////////////////////////////////////////////*/
 
 .gridMain{
    display: grid;
@@ -224,7 +233,7 @@ aside h3{
 }
 
 
-/* FIN DEL MAIN GRID */
+/*/////////////////////////////////// FIN DEL MAIN GRID ///////////////////////////////////////*/
 
 header div img{
    height: 100px;
@@ -254,7 +263,7 @@ header div img{
    }
 }
 
-/* SUCURSALES */
+/*///////////////////////////////////////////////// SUCURSALES ////////////////////////////////////////////*/
 
 .container li a{
    cursor: pointer;
@@ -349,7 +358,7 @@ header div img{
    margin-top: 40px;
 }  
 
-/* MEDIA QUERRY SUCURSALES */
+/*///////////////////////////////////////// MEDIA QUERRY SUCURSALES //////////////////////////////////////*/
 
 @media only screen and (max-width: 768px){
    header{
@@ -373,7 +382,7 @@ header div img{
    }
 }
 
-/* PRODUCTOS */
+/*////////////////////////////////////////////// PRODUCTOS ///////////////////////////////////////*/
 
 .sectionEmbalaje, h2{
    text-align: center;
@@ -443,6 +452,8 @@ header div img{
 .whiteBg h1{
    color: rgb(9, 89, 236);
 }
+
+/* ///////////////////////////////////// MEDIA QUERRY PRODUCTOS /////////////////////////////////////// */
 
 @media only screen and (max-width: 768px){
    .containerEmbalaje div, .containerInsumos div, .containerLimpieza div{
