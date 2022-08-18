@@ -1,0 +1,374 @@
+html{
+   font-size: 62.5%;
+   height: 100%;
+}
+
+body{
+   min-height: 100%;
+}
+
+nav ul li{
+   list-style: none; 
+   font-size: 20px;
+   display: inline;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 30px;
+   font-weight: 300;
+}
+
+header nav a:link, header nav a:visited, header nav a:active, .contacto a:link, .contacto a:visited, .contacto a:active{
+   color:rgb(9, 89, 236);
+   cursor: pointer;
+}
+
+li{
+   list-style-type: none;
+}
+a{
+   text-decoration: none;
+}
+
+h1{
+   text-align: center;
+   font-size:50px;
+   color: rgb(5, 38, 99);
+   font-weight: bolder;
+}
+
+main div p{
+   text-align: center;
+   font-size: 30px;
+}
+
+footer{
+   font-size: 20px;
+   border-top: 1px solid rgba(204, 195, 195,0.4);
+   width: 100%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+main form{
+   text-align: center;
+   font-size: 15px;
+}
+
+main div h2, article{
+   text-align: center;
+   font-size: 30px;
+}
+
+.parrafo{
+   margin-top: 80px;
+}
+
+.completar{
+   width: 10%;
+}
+
+.fuenteMediana{
+   font-size: 15px;
+}
+
+header{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid rgb(158, 154, 154);
+   width: 100%;
+}
+
+main{
+   background-color: rgb(243, 237, 237);
+   overflow: auto;
+   width: 100%;
+}
+
+
+.bordeAlto{
+   border-bottom: 40px solid black;
+   border-color: rgb(9, 89, 236);
+   border-radius: 20px;
+   width: 100%;
+   
+}
+
+article h1{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article p{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.rrss{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   height: 50px;
+   margin-bottom: 0px; 
+   background-color: rgb(246, 242, 250);
+   padding-top: 20px;
+   padding-bottom: 20px;
+   width: 100%;
+}
+
+.contacto{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   border-top: 1px solid rgb(158, 154, 154);
+   padding: 20px;
+}
+
+aside p{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 15px;
+   text-align: center;
+   color: rgb(133, 145, 155);
+}
+
+aside h3{
+   font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+   font-size: 25px;
+   font-weight: 700;
+   text-align: center;
+   color:rgb(5, 38, 99);
+}
+
+.achicar{
+   height: 170px;
+}
+
+
+/* GRID MAIN */
+
+.gridMain{
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: auto auto auto auto;
+   grid-template-areas: "aside1 encabezado aside2"
+                        "aside3 articleMain aside4"
+                        "aside5 imgFinal aside6";
+   grid-gap: 40px;
+   padding-top: 50px;
+   width: 100%;
+}
+
+.encabezado{
+   grid-area: encabezado;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.aside1{
+   grid-area: aside1;
+   text-align: center;
+   padding-top: 20px;
+   max-width: 200px;
+   padding-left: 50px;
+}
+
+.aside2{
+   grid-area: aside2;
+   text-align: center;
+   padding-top: 20px;
+   max-width: 200px;
+   padding-left: 80px;
+}
+.aside3{
+   grid-area: aside3;
+   text-align: center;
+   padding-top: 120px;
+   max-width: 200px;
+   padding-left: 50px;
+}
+.aside4{
+   grid-area: aside4;
+   text-align: center;
+   padding-top: 120px;
+   max-width: 200px;
+   padding-left: 80px;
+}
+.articleMain{
+   grid-area: articleMain;
+   text-align: center;
+   margin-bottom: -50px;
+}
+.imgFinal{
+   grid-area: imgFinal;
+   text-align: center;
+   padding-top: 145px;
+}
+.aside5{
+   grid-area: aside5;
+   text-align: center;
+   max-width: 200px;
+   padding-left: 50px;
+}
+
+.aside6{
+   grid-area: aside6;
+   text-align: center;
+   max-width: 200px;
+   padding-left: 80px;
+}
+
+
+/* FIN DEL MAIN GRID */
+
+header div img{
+   height: 100px;
+}
+
+@media only screen and (max-width: 768px){
+   header{
+      flex-direction: column;
+   }
+   .gridMain{
+      grid-template-areas: "encabezado encabezado"
+                           "articleMain articleMain"
+                           "aside3 aside4"
+                           "aside5 aside6"
+                           "aside1 aside2"
+                           "imgFinal imgFinal"
+                           ;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+   }
+      
+   .imgFinal{
+      display: none;
+   }
+   .encabezado{
+      overflow: hidden;
+   }
+}
+
+/* SUCURSALES */
+
+.container li a{
+   cursor: pointer;
+}
+
+.container li a:link, .container li a:visited, .container li a:active{
+   color: black;
+}
+
+.container li a:hover{
+   color: rgb(5, 38, 99);
+}
+
+.container h2{
+   color: rgb(133, 145, 155);
+   text-align: center;
+   font-family: sans-serif;
+}
+
+.container p{
+   font-size: 13px;
+   color: black;
+   text-align: center;
+   font-family: sans-serif;
+}
+
+.container li img{
+   height: 15px;
+   padding-top: 15px;
+   padding-right: 15px;
+}
+
+.container li{
+   display: flex;
+   justify-content: left;
+}
+
+.empujon{
+   padding-left: 4px;
+}
+
+.sucursal1{
+   display: flex;
+   flex-direction: column;
+   grid-area: sucursal1;
+}
+
+.container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: "sucursal1 sucursal2 sucursal3";
+}
+
+.sucursal2{
+   display: flex;
+   flex-direction: column;
+   grid-area: sucursal2;
+}
+
+.sucursal3{
+   display: flex;
+   flex-direction: column;
+   grid-area: sucursal3;
+}
+
+.imgProv{
+   height: 250px;
+   width: 400px;
+   margin-right: 150px;
+} 
+
+.container .provH2{
+   margin-top: -5px;
+   margin-bottom: -20px;
+   color: rgb(5, 38, 99);
+   text-align: justify;
+   padding-left: 20px;
+}
+
+.container .proviH2{
+   text-align: justify;
+   padding-left: 20px;
+}
+
+.container .provincia{
+   text-align: justify;
+   border-left: solid 20px rgb(5, 38, 99);
+   margin-left: 40px;
+   height: 70px;
+   margin-bottom: 40px;
+   margin-top: 40px;
+}  
+
+/* MEDIA QUERRY SUCURSALES */
+
+@media only screen and (max-width: 768px){
+   header{
+      flex-direction: column;
+   }
+   .container{
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: "sucursal1" 
+                        "sucursal2" 
+                        "sucursal3";
+   }
+   .lista{padding: 0;}
+
+   .lista ul{
+      background-color: rgb(240, 232, 232);
+      margin: 40px;
+      border: 1px solid rgb(240, 232, 232);
+      border-radius: 20px;
+      margin-right: 30%;
+   }
+}
