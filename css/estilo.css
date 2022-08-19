@@ -258,15 +258,15 @@ header div img{
 
 /*///////////////////////////////////////////////// SUCURSALES ////////////////////////////////////////////*/
 
-.container li a{
+.container li a, .inLine a{
    cursor: pointer;
 }
 
-.container li a:link, .container li a:visited, .container li a:active{
+.container li a:link, .container li a:visited, .container li a:active, .inLine a:visited, .inLine a:link, .inLine a:active{
    color: black;
 }
 
-.container li a:hover{
+.container li a:hover, .inLine a:hover{
    color: rgb(5, 38, 99);
 }
 
@@ -596,5 +596,23 @@ form{
       border-bottom: 9px solid rgb(5, 38, 99);
       border-radius: 7px;
       margin-bottom: 30px;
+   }
+}
+
+/* ////////////// NOSOTROS TEMPORAL ///////////////////////// */
+
+.nosotrosAlpha{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-row-gap: 120px;
+   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+   .nosotrosAlpha{
+      grid-template-columns:  1fr;
+      grid-template-rows: 1fr;
+      grid-row-gap: 20px;
    }
 }
