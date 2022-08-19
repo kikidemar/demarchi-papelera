@@ -22,21 +22,36 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h1>Contactanos</h1>
-            <h2>Formulario de contacto</h2>
-        </div>
         <form action="">
-            <label for="nombre">Nombre completo:</label>
-            <input type="text" name="nombre" class="completar"><br>
-            <label for="telefono">Telefono:</label>
-            <input type="number" name="telefono" class="completar"><br>
-            <label for="mail">E-mail:</label>
-            <input type="email" name="mail" class="completar"><br>
-            <div>Mensaje:</div>
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Resetear">
+            <fieldset class="gridForm">
+                <legend class="legend"><h1>CONTACTO</h1></legend>
+                <div class="info">
+                    <h2>Contactanos</h2>
+                    <div class="inLine"><img src="../assets/img/telefono.png" alt="telefono"><p>+5491137770888</p></div>
+                    <div class="inLine"><img src="../assets/img/reloj.png" alt="reloj"><p> Lun. a vier. de 08:30 a 18 hs.</p></div><div class="inLine"><img src="../assets/img/gps.png" alt="gps"><p class="empujonP"> Ituzaingó 362, Pilar, Buenos Aires</p></div>
+                    <br><br>
+                    <div class="mapBorder"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13159.522838803072!2d-58.9117931!3d-34.4551759!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8898bb4fe0ae3963!2sPapelera%20Demar!5e0!3m2!1ses-419!2sar!4v1660883080686!5m2!1ses-419!2sar" width="550" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+                </div>
+
+                <div class="formulario">
+
+                <label for="nombre"><b> Nombre completo:</b></label><br><br>
+                <input type="text" name="nombre" required id="nombre" ><br><br><br>
+
+                <label for="telefono"><b> Telefono:</b></label><br><br>
+                <input type="number" name="telefono" required id="telefono"><br><br><br>
+
+                <label for="mail"><b> E-mail:</b></label><br><br>
+                <input type="email" name="mail" required id="email"><br><br><br>
+
+                <div class="mensaje"><b> Mensaje:</b></div><br>
+                <textarea name="mensaje" id="mensaje" rows="9"></textarea><br><br><br>
+
+                <div class="submit1"><input class="submit" type="submit" value="Enviar" ></div>
+
+                </div>
+            </fieldset>
         </form>
     </main>
     <footer>
