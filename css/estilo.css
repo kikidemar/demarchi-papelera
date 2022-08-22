@@ -599,6 +599,18 @@ form{
    }
 }
 
+/* ///////////////////// ANIMACIONES  ////////////////////////// */
+
+.translateY{
+   transition: all 1s;
+}
+
+.translateY:hover{
+   transform: translateY(-13px);
+}
+
+
+
 /* ////////////// NOSOTROS TEMPORAL ///////////////////////// */
 
 .nosotrosAlpha{
@@ -616,3 +628,4 @@ form{
       grid-row-gap: 20px;
    }
 }
+
