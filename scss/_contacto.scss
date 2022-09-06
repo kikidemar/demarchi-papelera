@@ -1,0 +1,135 @@
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    img{
+    height: 17px;
+    padding-right: 20px;
+    padding-top: 15px;
+    }
+}
+
+.inLine{
+    p{
+    font-size: 16px;
+    display: inline;
+    font-weight: 400px;
+    letter-spacing: 1px;
+    }
+}
+
+
+
+.gridForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    grid-template-areas:"legend legend"
+                        "info   formulario";
+                width: 70%;
+    grid-gap: 20px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.info{
+    grid-area: info;
+}
+
+.legend{
+    h1{
+    grid-area: legend;
+    font-size: 40px;
+    letter-spacing: 4px;
+    }
+}
+.formulario{
+    grid-area: formulario;
+    padding-top: 29px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.inLine, .info h2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.empujonP{padding-left: 5px;}
+
+.formulario{
+    text-align: justify;
+    input{
+    width: 100%;
+    height: 30px;
+    border: solid 1px $colorSecundario;
+    border-radius: 7px;
+    }
+    textarea{
+        width: 100%;
+        border: solid 1px $colorSecundario;
+        border-radius: 7px;
+    }
+    .submit{
+        width: 100px;
+        height: 60px;
+        font-size: 20px; 
+        border-color: rgb(223, 212, 212);
+        background-color: rgb(221, 205, 205);
+        cursor: pointer;
+        letter-spacing: 3px; 
+    }
+    label{
+        font-size: 20px;  
+        text-align: justify;
+    }
+}
+
+.submit1{
+    text-align: end;
+}
+
+.mensaje{
+    font-size: 20px;  
+    text-align: justify;
+}
+
+.mapBorder{
+    border: 1px $colorSecundario solid;
+    display: flex;
+    width: 550px;
+}
+
+/////////////////////////  MEDIA QUERRY CONTACTO  //////////////////// 
+
+@media only screen and (max-width: 768px) {
+
+.gridForm{
+    grid-template-areas:"legend"
+                        "info" 
+                        "formulario" ;
+}
+
+.info{
+        padding-bottom: 80px;
+        border-bottom: 9px solid $colorSecundario;
+        border-radius: 7px;
+        margin-bottom: 30px;
+    }
+}

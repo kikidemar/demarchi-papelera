@@ -1,0 +1,107 @@
+
+.embalaje{ 
+    h2{
+        text-align: center;
+        font-size: 40px;
+        color: $colorGris;
+    }
+}
+
+.insumos{
+    h2{
+        text-align: center;
+        font-size: 40px;
+        color: $colorGris;
+    }
+}
+
+.limpieza{
+    h2{
+        text-align: center;
+        font-size: 40px;
+        color: $colorGris;
+    }
+}
+
+.containerEmbalaje, .containerInsumos, .containerLimpieza{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.whiteBg {
+    h4{
+        font-size: 16px;
+        text-align: center;
+    }
+    h5{
+        font-size: 14px;
+        text-align: center;
+        font-weight: 900;
+        color:#4D4D4D
+    }
+    button{
+        background-color: $colorSecundario;
+        color: white;
+        border: 1px solid $colorSecundario;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    section{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    h1{
+        color: $colorPrincipal;
+    }
+}
+
+
+.containerEmbalaje div, .containerInsumos div, .containerLimpieza div{
+    background-color: white;
+    padding: 2%;
+    min-width: 370px;
+    max-width: 380px;
+    border: 1px solid rgb(227, 230, 233);
+    border-radius: 20px;
+}
+
+.hrSecu{
+    display: none;
+}
+
+.hrPrin{
+    color:$colorSecundario;
+    border-top: 8px solid $colorSecundario;
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: -70px;
+    border-radius: 40px;
+}
+
+.imgPad{
+    padding-left: 40px;
+}
+
+///////////////////////////////////// MEDIA QUERRY PRODUCTOS ///////////////////////////////////////
+
+@media only screen and (max-width: 768px){
+    .containerEmbalaje div, .containerInsumos div, .containerLimpieza div{
+        margin-bottom: 30px;
+    }
+    .embalaje h2{
+        margin-top: -50px;
+    }
+    .empujonTop{
+        margin-top: -80px;
+    }
+    .hrSecu{
+        display: block;
+        color:$colorSecundario;
+        border-top: 8px solid $colorSecundario;
+        width: 60%;
+        margin-top: -20px;
+    }
+}

@@ -1,0 +1,189 @@
+h1{
+    text-align: center;
+    font-size:50px;
+    color: $colorSecundario;
+    font-weight: bolder;
+}
+
+main {
+    div{
+        p{
+    text-align: center;
+    font-size: 30px;
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    form{
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+article{
+    text-align: center;
+    font-size: 30px;
+}
+
+.parrafo{
+    margin-top: 80px;
+}
+
+.fuenteMediana{
+    font-size: 15px;
+}
+
+main{
+    background-color: rgb(243, 237, 237);
+    overflow: auto;
+    width: 100%;
+}
+
+
+.bordeAlto{
+    border-bottom: 40px solid black;
+    border-color: $colorPrincipal;
+    border-radius: 20px;
+    width: 100%;
+    
+}
+
+.articleMain {
+    h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+.article{
+    p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+}
+
+aside {
+    p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        text-align: center;
+        color: $colorGris;
+    }
+    h3{
+        font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        color:$colorSecundario;
+    }
+}   
+
+.achicar{
+    height: 170px;
+}
+
+////////////////////////////  INICIO MAIN GRID  ////////////////////////
+
+.gridMain{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:"aside1 encabezado aside2"
+                        "aside3 articleMain aside4"
+                        "aside5 imgFinal aside6";
+    grid-gap: 40px;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.encabezado{
+    grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside1{
+    grid-area: aside1;
+    text-align: center;
+    padding-top: 20px;
+    max-width: 200px;
+    padding-left: 50px;
+}
+
+.aside2{
+    grid-area: aside2;
+    text-align: center;
+    padding-top: 20px;
+    max-width: 200px;
+    padding-left: 80px;
+}
+.aside3{
+    grid-area: aside3;
+    text-align: center;
+    padding-top: 120px;
+    max-width: 200px;
+    padding-left: 50px;
+}
+.aside4{
+    grid-area: aside4;
+    text-align: center;
+    padding-top: 120px;
+    max-width: 200px;
+    padding-left: 80px;
+}
+.articleMain{
+    grid-area: articleMain;
+    text-align: center;
+    margin-bottom: -50px;
+}
+.imgFinal{
+    grid-area: imgFinal;
+    text-align: center;
+    padding-top: 145px;
+}
+.aside5{
+    grid-area: aside5;
+    text-align: center;
+    max-width: 200px;
+    padding-left: 50px;
+}
+
+.aside6{
+    grid-area: aside6;
+    text-align: center;
+    max-width: 200px;
+    padding-left: 80px;
+}
+
+@media only screen and (max-width: 768px){
+    header{
+    flex-direction: column;
+    }
+    .encabezado {
+        img{
+            max-width: 700px;
+    }
+    }
+
+    .gridMain{
+        grid-template-areas: "encabezado encabezado"
+                            "articleMain articleMain"
+                            "aside3 aside4"
+                            "aside5 aside6"
+                            "aside1 aside2"
+                            "imgFinal imgFinal"
+                            ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .imgFinal{
+        display: none;
+    }
+    .encabezado{
+        overflow: hidden;
+    }
+}

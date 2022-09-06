@@ -1,0 +1,121 @@
+
+.inLine {
+    a{
+        cursor: pointer;
+        &:link, &:visited, &:active{
+            color: black;
+        }
+        &:hover{
+            color: $colorSecundario;
+        }
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "sucursal1 sucursal2 sucursal3";
+    li{
+        display: flex;
+        justify-content: left;
+        a{
+            cursor: pointer;
+            &:link, &:visited, &:active{
+            color: black;
+            }
+            &:hover{
+                color: $colorSecundario;
+            }
+        }
+        img{
+            height: 15px;
+            padding-top: 15px;
+            padding-right: 15px;
+        }
+    }
+    h2{
+        color: $colorGris;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    p{
+        font-size: 13px;
+        color: black;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .provH2{
+        margin-top: -5px;
+        margin-bottom: -20px;
+        color: $colorSecundario;
+        text-align: justify;
+        padding-left: 20px;
+    }
+    .proviH2{
+        text-align: justify;
+        padding-left: 20px;
+    }
+    .provincia{
+        text-align: justify;
+        border-left: solid 20px $colorSecundario;
+        margin-left: 40px;
+        height: 70px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+}
+
+.empujon{
+    padding-left: 4px;
+}
+
+.sucursal1{
+    display: flex;
+    flex-direction: column;
+    grid-area: sucursal1;
+}
+
+.sucursal2{
+    display: flex;
+    flex-direction: column;
+    grid-area: sucursal2;
+}
+
+.sucursal3{
+    display: flex;
+    flex-direction: column;
+    grid-area: sucursal3;
+}
+
+.imgProv{
+    height: 250px;
+    width: 400px;
+    margin-right: 150px;
+} 
+
+////////////////////  MEDIA QUERRY SUCURSALES  ////////////////////////
+
+@media only screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+    .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"sucursal1" 
+                        "sucursal2" 
+                        "sucursal3";
+    }
+    .lista{padding: 0;}
+
+    .lista{
+        ul{
+            background-color: rgb(240, 232, 232);
+            margin: 40px;
+            border: 1px solid rgb(240, 232, 232);
+            border-radius: 20px;
+            margin-right: 30%;
+        }
+    }
+}
