@@ -1,5 +1,11 @@
+$estilos:(
+    centro:center,
+    tFuente:30px,
+    completo:100%
+);
+
 h1{
-    text-align: center;
+    text-align: map-get($estilos, centro);
     font-size:50px;
     color: $colorSecundario;
     font-weight: bolder;
@@ -8,23 +14,23 @@ h1{
 main {
     div{
         p{
-    text-align: center;
-    font-size: 30px;
+    text-align: map-get($estilos, centro);
+    font-size: map-get($estilos, tFuente);
         }
         h2{
-            text-align: center;
+            text-align: map-get($estilos, centro);
             font-size: 30px;
         }
     }
     form{
-        text-align: center;
+        text-align: map-get($estilos, centro);
         font-size: 15px;
     }
 }
 
 article{
-    text-align: center;
-    font-size: 30px;
+    text-align: map-get($estilos, centro);
+    font-size: map-get($estilos, tFuente);
 }
 
 .parrafo{
@@ -38,7 +44,7 @@ article{
 main{
     background-color: rgb(243, 237, 237);
     overflow: auto;
-    width: 100%;
+    width: map-get($estilos, completo);
 }
 
 
@@ -46,7 +52,7 @@ main{
     border-bottom: 40px solid black;
     border-color: $colorPrincipal;
     border-radius: 20px;
-    width: 100%;
+    width: map-get($estilos, completo);
     
 }
 
@@ -66,14 +72,14 @@ aside {
     p{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 15px;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         color: $colorGris;
     }
     h3{
         font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
         font-size: 25px;
         font-weight: 700;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         color:$colorSecundario;
     }
 }   
@@ -93,21 +99,21 @@ aside {
                         "aside5 imgFinal aside6";
     grid-gap: 40px;
     padding-top: 50px;
-    width: 100%;
+    width: map-get($estilos, completo);
 }
 
 .encabezado{
     grid-area: encabezado;
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     display: flex;
     flex-wrap: wrap;
 }
 
 .aside1{
     grid-area: aside1;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     padding-top: 20px;
     max-width: 200px;
     padding-left: 50px;
@@ -115,45 +121,45 @@ aside {
 
 .aside2{
     grid-area: aside2;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     padding-top: 20px;
     max-width: 200px;
     padding-left: 80px;
 }
 .aside3{
     grid-area: aside3;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     padding-top: 120px;
     max-width: 200px;
     padding-left: 50px;
 }
 .aside4{
     grid-area: aside4;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     padding-top: 120px;
     max-width: 200px;
     padding-left: 80px;
 }
 .articleMain{
     grid-area: articleMain;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     margin-bottom: -50px;
 }
 .imgFinal{
     grid-area: imgFinal;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     padding-top: 145px;
 }
 .aside5{
     grid-area: aside5;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     max-width: 200px;
     padding-left: 50px;
 }
 
 .aside6{
     grid-area: aside6;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     max-width: 200px;
     padding-left: 80px;
 }

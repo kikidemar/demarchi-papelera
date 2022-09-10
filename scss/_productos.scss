@@ -1,25 +1,25 @@
+@mixin alignFontColor($align, $font, $color) {
+    text-align: $align;
+    font-size: $font;
+    color: $color;
+}
+
 
 .embalaje{ 
     h2{
-        text-align: center;
-        font-size: 40px;
-        color: $colorGris;
+        @include alignFontColor(center, 40px, $colorGris)
     }
 }
 
 .insumos{
     h2{
-        text-align: center;
-        font-size: 40px;
-        color: $colorGris;
+        @include alignFontColor(center, 40px, $colorGris)
     }
 }
 
 .limpieza{
     h2{
-        text-align: center;
-        font-size: 40px;
-        color: $colorGris;
+        @include alignFontColor(center, 40px, $colorGris)
     }
 }
 

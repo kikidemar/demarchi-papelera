@@ -251,13 +251,12 @@ aside h3 {
     color: #052663;
     text-align: justify;
     padding-left: 20px; }
-  .container .proviH2 {
+  .container .proviH2, .container .provincia {
     text-align: justify;
     padding-left: 20px; }
   .container .provincia {
-    text-align: justify;
     border-left: solid 20px #052663;
-    margin-left: 40px;
+    margin-left: 20px;
     height: 70px;
     margin-bottom: 40px;
     margin-top: 40px; }
