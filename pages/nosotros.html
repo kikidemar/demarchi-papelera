@@ -6,48 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Papelera Demar es una empresa fundada en el año 1980, con base en la ciudad de Buenos Aires, con la idea de siempre ofrecer el mejor producto y servicio.">
     <meta name="keywords" content="papelera, nosotros, historia, librería, identidad">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Nosotros</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <a href="../index.html"><img src="../assets/img/papelera.logo.jpg" alt="logo pagina web"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="sucursales.html">SUCURSALES</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div>
-            <h1>Estamos en construccion. Mientras les dejamos una hermosa pagina miau responsive</h1>
-        </div>
-        <section class="nosotrosAlpha">
-            <img src="http://placekitten.com/g/500/500" alt="gatito">
-            <img src="http://placekitten.com/g/501/500" alt="gatito">
-            <img src="http://placekitten.com/g/500/501" alt="gatito">
-            <img src="http://placekitten.com/g/499/500" alt="gatito">
-            <img src="http://placekitten.com/g/500/499" alt="gatito">
-            <img src="http://placekitten.com/g/498/500" alt="gatito">
-            <img src="http://placekitten.com/g/499/499" alt="gatito">
-            <img src="http://placekitten.com/g/501/501" alt="gatito">
-            <img src="http://placekitten.com/g/502/500" alt="gatito">
-        </section>
-    </main>
-    <footer>
-        <div class="rrss">
-            <img src="../assets/img/Facebook_Logo.png" alt="facebook logo" class="translateY">
-            <img src="../assets/img/insta.logo.png" alt="instagram logo" class="translateY">
-            <img src="../assets/img/whatsapp_logo.png" alt="whats app logo" class="translateY">
-        </div>
-        <div class="contacto">
-            <a href="contacto.html">CONTACTANOS</a>
-        </div>
-    </footer>
+    <div class="container-fluid">
+        <header class="row mt-2">
+            <div class="col-12 col-lg-6 logoImg">
+                <a href="../index.html"><img src="../assets/img/papelera.logo.jpg" alt="logo pagina web"></a>
+            </div>
+            <nav class="col-12 col-lg-6 d-flex justify-content-lg-end justify-content-sm-center">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="sucursales.html">SUCURSALES</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="nosotros">
+            <div class="row" style="width:100% ;overflow: hidden;">
+                <div id="carouselExampleIndicators" class="carousel slide col-12" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="contacto.html"><img src="../assets/img/BAN_01.jpg" class="d-block w-100" alt="banner de camioneta de la papelera"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="productos.html"><img src="../assets/img/BAN_02.jpg" class="d-block w-100" alt="banner de corte"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="contacto.html"><img src="../assets/img/BAN_03.jpg" class="d-block w-100" alt="banner de la papelera"></a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <h2 class="col-12 text-center ">Somos una empresa</h2>
+                <h1 class="col-12 text-center ">Con La Tradición De Creer En El País</h1>
+                <div class="col-1"></div>
+                <div class="col-10">
+                <p class="text-center fw-bolder"> Somos una de las empresas con mayor tradición a nivel nacional. Es por eso que hemos logrado por más de 90 años cumplir con un papel protagónico en el mercado y en la sociedad argentina. Somos una empresa que cree en el país y en su futuro, por tal razón, invertimos en él y seguimos siendo parte de su desarrollo con la perspectiva del nuevo siglo.</p>
+
+                <p class="text-center fw-bolder"> En La Papelera innovamos constantemente, incorporando periódicamente tecnología y calidad en la producción de cartón corrugado, sacos y bolsas de papel además de especializarnos en impresión offset con nuestra línea de packaging. Actualmente, incluimos en  nuestra oferta productos que se adaptan a los emprendedores dándoles la opción de contar con empaques de calidad adaptados a sus requerimientos.</p>
+            </div>
+            <div class="col-1"></div>
+            </div>
+        </main>
+        <footer class="row">
+            <div class="rrss2 col-12">
+                <img src="../assets/img/Facebook_Logo.png" alt="facebook logo" class="translateY" height="50px">
+                <img src="../assets/img/insta.logo.png" alt="instagram logo" class="translateY" height="50px">
+                <img src="../assets/img/whatsapp_logo.png" alt="whats app logo" class="translateY" height="50px">
+            </div>
+            <div class="contacto col-12">
+                <a href="contacto.html">CONTACTANOS</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -23,8 +23,15 @@ header {
   header nav a:link, header nav a:visited, header nav a:active {
     color: #0959ec;
     cursor: pointer; }
+  header nav a:hover {
+    color: #85919b; }
   header div img {
     height: 100px; }
+
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    font-size: 17px;
+    font-weight: 540; } }
 
 .contacto a:link, .contacto a:visited, .contacto a:active {
   color: #0959ec;
@@ -35,7 +42,7 @@ footer {
   border-top: 1px solid rgba(204, 195, 195, 0.4);
   width: 100%; }
 
-.rrss {
+.rrss, .rrss2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -53,7 +60,7 @@ footer {
   border-top: 1px solid #9e9a9a;
   padding: 20px; }
 
-.rrss img {
+.rrss img, .rrss2 img {
   cursor: pointer; }
 
 html {
@@ -290,7 +297,8 @@ aside h3 {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "sucursal1"  "sucursal2"  "sucursal3"; }
+    grid-template-areas: "sucursal1"  "sucursal2"  "sucursal3";
+    overflow: hidden; }
   .lista {
     padding: 0; }
   .lista ul {
@@ -496,3 +504,47 @@ form {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-row-gap: 20px; } }
+
+.rrss2 {
+  height: 100%; }
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x)); }
+
+.nosotrosHead {
+  background-image: url(../assets/img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px; }
+
+.nosotros h2 {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #85919b;
+  margin-bottom: -4px; }
+
+.nosotros h1 {
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #052663;
+  font-size: 50px;
+  margin-bottom: 10px;
+  letter-spacing: 2px; }
+
+.nosotros p {
+  font-size: 20px; }
+
+@media only screen and (max-width: 768px) {
+  .logoImg {
+    display: flex;
+    justify-content: center; }
+  .nosotros h1 {
+    font-size: 35px;
+    letter-spacing: 0px;
+    margin-top: 10px; } }
