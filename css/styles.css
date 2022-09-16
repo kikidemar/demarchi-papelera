@@ -33,6 +33,25 @@ header {
     font-size: 17px;
     font-weight: 540; } }
 
+@media only screen and (max-width: 675px) {
+  nav {
+    padding-top: -20px;
+    background-color: #eee4e4;
+    width: 100%; }
+    nav ul li {
+      margin: -17px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: auto; }
+  header {
+    flex-wrap: nowrap; }
+    header div img {
+      width: 400px; }
+  .d-flex {
+    justify-content: center; } }
+
 .contacto a:link, .contacto a:visited, .contacto a:active {
   color: #0959ec;
   cursor: pointer; }
@@ -144,7 +163,8 @@ aside h3 {
   grid-template-areas: "aside1 encabezado aside2" "aside3 articleMain aside4" "aside5 imgFinal aside6";
   grid-gap: 40px;
   padding-top: 50px;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .encabezado {
   grid-area: encabezado;
@@ -490,7 +510,12 @@ form {
     padding-bottom: 80px;
     border-bottom: 9px solid #052663;
     border-radius: 7px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  iframe {
+    width: 400px;
+    height: 300px; }
+  .mapBorder {
+    width: 400px; } }
 
 .nosotrosAlpha {
   display: grid;

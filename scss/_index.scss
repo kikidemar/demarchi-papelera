@@ -100,6 +100,7 @@ aside {
     grid-gap: 40px;
     padding-top: 50px;
     width: map-get($estilos, completo);
+    overflow: hidden;
 }
 
 .encabezado{

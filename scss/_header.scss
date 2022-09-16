@@ -49,4 +49,35 @@ header{
             }
         }
     }
+    
+}
+
+@media only screen and (max-width: 675px) {
+    nav {
+        padding-top: -20px;
+        background-color: rgb(238, 228, 228);
+        width: 100%;
+        ul{ 
+            li{
+                margin: -17px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: auto;
+                
+            }
+        }
+    }
+    header{
+        flex-wrap: nowrap;
+        div{
+            img{
+                width: 400px;
+                }
+            }
+        }
+    .d-flex{
+        justify-content: center;
+    }
 }
