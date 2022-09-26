@@ -374,13 +374,20 @@ aside h3 {
 .whiteBg h1 {
   color: #0959ec; }
 
-.containerEmbalaje div, .containerInsumos div, .containerLimpieza div {
+.card {
   background-color: white;
   padding: 2%;
   min-width: 370px;
   max-width: 380px;
   border: 1px solid #e3e6e9;
-  border-radius: 20px; }
+  border-radius: 20px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease; }
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
 
 .hrSecu {
   display: none; }
